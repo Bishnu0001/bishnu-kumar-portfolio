@@ -1,6 +1,6 @@
 # Bishnu Kumar | Portfolio
 
-A Streamlit portfolio featuring software development experience, applied AI projects, education, and contact information.
+A Streamlit portfolio featuring Bishnu Kumar’s data science projects, research, education, and contact information.
 
 ## Run locally
 
