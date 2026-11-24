@@ -1,87 +1,157 @@
 <div class="portfolio" id="top">
   <nav class="topbar" aria-label="Portfolio navigation">
-    <a class="wordmark" href="#top">Bishnu Kumar</a>
+    <a class="wordmark" href="#top"><span class="monogram" aria-hidden="true">BK</span>Bishnu Kumar</a>
     <div class="navlinks">
       <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a>
       <a href="#projects">Projects</a><a href="#education">Education</a><a href="#research">Research</a>
     </div>
-    <a class="nav-contact" href="#contact">Contact</a>
+    <a class="button nav-contact" href="#contact">Contact</a>
   </nav>
-  <div class="hero">
-    <div>
+
+  <header class="hero">
+    <div class="hero-copy">
       <p class="eyebrow">Hello, I’m</p>
-      <h1>Bishnu Kumar</h1>
+      <h1>Bishnu Kumar<span aria-hidden="true">.</span></h1>
       <p class="role">Aspiring Data Scientist</p>
-      <p class="intro">I’m studying computer applications at BIT Mesra and building Python projects in predictive modeling and computer vision.</p>
+      <p class="intro">MCA student at BIT Mesra building Python projects in predictive modeling, computer vision, and explainable AI.</p>
       <div class="actions">
-        <a class="button primary" href="#contact">Contact me</a>
+        <a class="button primary" href="#projects">Explore projects</a>
         <a class="button" href="./app/static/resume.pdf" target="_blank" rel="noopener">View résumé</a>
       </div>
       <div class="social"><a href="https://github.com/Bishnu0001">GitHub</a><a href="https://www.linkedin.com/in/bishnu-kr/">LinkedIn</a></div>
     </div>
-    <figure class="notebook">
-      <figcaption>profile.py</figcaption>
-      <pre><code><span class="code-name">profile</span> = {
-    <span class="code-key">"focus"</span>: <span class="code-value">"Data science"</span>,
-    <span class="code-key">"tools"</span>: [
-        <span class="code-value">"Python"</span>, <span class="code-value">"SQL"</span>, <span class="code-value">"Scikit-learn"</span>
-    ],
-    <span class="code-key">"based_in"</span>: <span class="code-value">"Ranchi, India"</span>
-}</code></pre>
-    </figure>
-  </div>
-  <section id="about" class="about">
-    <div>
-      <h2>About me</h2>
-      <p>I’m pursuing an MCA at Birla Institute of Technology, Mesra, where I also completed my BCA. I’m interested in how data can help people make decisions, and I enjoy working through the whole process, from preparing datasets to explaining model predictions.</p>
-      <p>My work includes research on software defect prediction and deployed applications for attendance automation and credit risk. I won first prize at the BIT Mesra college hackathon and served as an executive member of the campus Google Developer Student Club.</p>
+    <div class="hero-visual">
+      <div class="portrait-stage">
+        <span class="orbit orbit-outer" aria-hidden="true"></span>
+        <span class="orbit orbit-inner" aria-hidden="true"></span>
+        <figure class="portrait"><img src="data:image/jpeg;base64,{{PORTRAIT}}" alt="Portrait of Bishnu Kumar" width="300" height="322"></figure>
+      </div>
+      <figure class="notebook">
+        <figcaption>profile.py</figcaption>
+        <pre><code>focus = <span>"Data science"</span>
+tools = [<span>"Python"</span>, <span>"SQL"</span>]</code></pre>
+      </figure>
     </div>
-    <figure class="portrait"><img src="data:image/jpeg;base64,{{PORTRAIT}}" alt="Portrait of Bishnu Kumar" width="300" height="322"></figure>
+  </header>
+
+  <dl class="highlights" aria-label="Portfolio highlights">
+    <div><dt>Defect prediction accuracy</dt><dd>85%<span>+</span></dd></div>
+    <div><dt>Students served by attendance app</dt><dd>200<span>+</span></dd></div>
+    <div><dt>BIT Mesra college hackathon</dt><dd>1st <span>place</span></dd></div>
+  </dl>
+
+  <section id="about" class="section">
+    <div class="section-heading reveal"><h2>About me</h2></div>
+    <div class="about-layout">
+      <div class="about-copy reveal">
+        <p>I’m pursuing an MCA at Birla Institute of Technology, Mesra, where I also completed my BCA. I enjoy working through the full modeling process, from preparing datasets to explaining why a model made a prediction.</p>
+        <p>I’ve researched software defect prediction and deployed applications for attendance automation and credit risk. I also served as an executive member of the campus Google Developer Student Club.</p>
+      </div>
+      <dl class="card profile-details reveal">
+        <div><dt>Based in</dt><dd>Ranchi, India</dd></div>
+        <div><dt>Studying at</dt><dd>BIT Mesra</dd></div>
+        <div><dt>Interested in</dt><dd>Applied machine learning</dd></div>
+      </dl>
+    </div>
   </section>
-<section id="experience">
-  <h2>Experience</h2>
-  <article class="card experience"><p class="eyebrow">November 2025 – June 2026</p><h3>Research Intern, Software Development</h3><p class="stack">Birla Institute of Technology, Mesra · Department of Computer Science</p>
-  <ul><li>Built a just-in-time defect prediction system in Python using ApacheJIT data, achieving over 85% accuracy.</li><li>Combined preprocessing, feature engineering, SMOTE and rolling-window validation. The pipeline reduced false-positive alerts by 20%.</li><li>Used SHAP to explain predictions across more than 14 software quality metrics.</li></ul></article>
-</section>
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skill-tiles">
-      <li>Python</li>
-      <li>SQL</li>
-      <li>Pandas</li>
-      <li>NumPy</li>
-      <li>Scikit-learn</li>
-      <li>XGBoost</li>
-      <li>TensorFlow</li>
-      <li>OpenCV</li>
-      <li>Streamlit</li>
-      <li>FastAPI</li>
-      <li>MySQL</li>
-      <li>Git</li>
-    </ul>
-    <p class="stack">Also worked with LangChain, LangGraph, Qdrant, Docker, and CI/CD.</p>
+
+  <section id="experience" class="section">
+    <div class="section-heading reveal"><h2>Experience</h2></div>
+    <article class="card experience reveal">
+      <header>
+        <p class="eyebrow">November 2025 – June 2026</p>
+        <h3>Research Intern, Software Development</h3>
+        <p class="muted">Birla Institute of Technology, Mesra · Department of Computer Science</p>
+      </header>
+      <div class="experience-body">
+        <ul>
+          <li>Built a just-in-time defect prediction system in Python using ApacheJIT data.</li>
+          <li>Combined feature engineering, SMOTE, and rolling-window validation to reduce false-positive alerts by 20%.</li>
+          <li>Used SHAP to explain predictions across more than 14 software quality metrics.</li>
+        </ul>
+        <div class="model-result">
+          <span>Model accuracy</span><strong>85%+</strong>
+          <div class="accuracy-track" aria-hidden="true"><span></span></div>
+        </div>
+      </div>
+    </article>
   </section>
-<section id="projects">
-  <h2>Selected projects</h2>
-  <div class="project-list">
-    <article class="card project"><p class="eyebrow">Computer vision · July 2026</p><h3>BIT Mesra AI Attendance</h3><p>Built a three-tier attendance app with user authentication and a MySQL backend. The face recognition pipeline uses Dlib embeddings and an SVM classifier to automate attendance for more than 200 students.</p><p class="stack">Python · Streamlit · MySQL · Dlib · Scikit-learn</p><div class="actions"><a class="button" href="https://bit-mesra-attendence.streamlit.app/" aria-label="Live demo of BIT Mesra AI Attendance">Live demo</a><a class="button" href="https://github.com/Bishnu0001/BIT-MESRA-AI-ATTENDANCE" aria-label="Source code for BIT Mesra AI Attendance">Source code</a></div></article>
-    <article class="card project"><p class="eyebrow">Predictive modeling · May 2026</p><h3>CreditWise</h3><p>Built and deployed a loan eligibility app on Streamlit Community Cloud. Developed the pipeline from feature engineering through model tuning and held-out evaluation. The app returns eligibility decisions in under 30 seconds.</p><p class="stack">Python · Streamlit · Scikit-learn · Pandas · NumPy</p><div class="actions"><a class="button" href="https://creditwise-loan-system-2026.streamlit.app/" aria-label="Live demo of CreditWise">Live demo</a><a class="button" href="https://github.com/Bishnu0001/CreditWise-Loan-System" aria-label="Source code for CreditWise">Source code</a></div></article>
-  </div>
-</section>
-  <section id="education">
-    <h2>Education</h2>
+
+  <section id="skills" class="section">
+    <div class="section-heading reveal"><h2>Skills</h2></div>
+    <div class="skills-grid">
+      <div class="card skill-group reveal">
+        <h3>Data &amp; analysis</h3>
+        <ul class="tags"><li>Python</li><li>SQL</li><li>Pandas</li><li>NumPy</li><li>MySQL</li></ul>
+      </div>
+      <div class="card skill-group reveal">
+        <h3>Machine learning</h3>
+        <ul class="tags"><li>Scikit-learn</li><li>XGBoost</li><li>TensorFlow</li><li>OpenCV</li><li>SHAP</li></ul>
+      </div>
+      <div class="card skill-group reveal">
+        <h3>Applications &amp; tooling</h3>
+        <ul class="tags"><li>Streamlit</li><li>FastAPI</li><li>LangChain</li><li>LangGraph</li><li>Qdrant</li><li>Git</li><li>Docker</li><li>CI/CD</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="section-heading reveal"><h2>Selected projects</h2></div>
+    <div class="project-list">
+      <article class="card project reveal">
+        <div class="project-copy">
+          <p class="eyebrow">Computer vision · July 2026</p>
+          <h3>BIT Mesra AI Attendance</h3>
+          <p>Built a three-tier attendance app with user authentication and a MySQL backend. A Dlib and SVM pipeline automates attendance for more than 200 students.</p>
+          <p class="stack">Python · Streamlit · MySQL · Dlib · Scikit-learn</p>
+          <div class="actions">
+            <a class="button primary" href="https://bit-mesra-attendence.streamlit.app/" aria-label="Live demo of BIT Mesra AI Attendance">Live demo</a>
+            <a class="button" href="https://github.com/Bishnu0001/BIT-MESRA-AI-ATTENDANCE" aria-label="Source code for BIT Mesra AI Attendance">Source code</a>
+          </div>
+        </div>
+        <div class="project-visual vision">
+          <p class="pipeline-title">Face recognition pipeline</p>
+          <ol class="pipeline"><li>Detect face</li><li>Extract Dlib embedding</li><li>Classify with SVM</li><li>Log attendance</li></ol>
+        </div>
+      </article>
+      <article class="card project reveal">
+        <div class="project-copy">
+          <p class="eyebrow">Predictive modeling · May 2026</p>
+          <h3>CreditWise</h3>
+          <p>Developed a loan eligibility demo from feature engineering through model tuning and held-out evaluation. The Streamlit app returns results in under 30 seconds.</p>
+          <p class="stack">Python · Streamlit · Scikit-learn · Pandas · NumPy</p>
+          <div class="actions">
+            <a class="button primary" href="https://creditwise-loan-system-2026.streamlit.app/" aria-label="Live demo of CreditWise">Live demo</a>
+            <a class="button" href="https://github.com/Bishnu0001/CreditWise-Loan-System" aria-label="Source code for CreditWise">Source code</a>
+          </div>
+        </div>
+        <div class="project-visual credit">
+          <p class="pipeline-title">Credit risk workflow</p>
+          <ol class="pipeline"><li>Prepare data</li><li>Engineer features</li><li>Train and evaluate model</li><li>Serve prediction</li></ol>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="section-heading reveal"><h2>Education</h2></div>
     <div class="grid">
-      <article class="card"><p class="eyebrow">Aug 2025 – Jul 2027 (expected)</p><h3>Master of Computer Applications</h3><p>Birla Institute of Technology, Mesra · CGPA 8.15</p></article>
-      <article class="card"><p class="eyebrow">Aug 2022 – May 2025</p><h3>Bachelor of Computer Applications</h3><p>Birla Institute of Technology, Mesra · CGPA 8.90</p></article>
+      <article class="card reveal"><p class="eyebrow">Aug 2025 – Jul 2027 (expected)</p><h3>Master of Computer Applications</h3><p>Birla Institute of Technology, Mesra</p><span class="grade">CGPA 8.15</span></article>
+      <article class="card reveal"><p class="eyebrow">Aug 2022 – May 2025</p><h3>Bachelor of Computer Applications</h3><p>Birla Institute of Technology, Mesra</p><span class="grade">CGPA 8.90</span></article>
     </div>
   </section>
-  <section id="research">
-    <h2>Research</h2>
-    <article class="card"><p class="eyebrow">IJEDR · Vol. 14, Issue 3 · July 2026</p><h3>AI-based face recognition for automated attendance management</h3><p>Examines how a three-tier architecture can support real-time attendance using Dlib embeddings, SVM classification, and Streamlit.</p><a class="button" href="https://doi.org/10.56975/ijedr.v14i3.308795">Read the paper</a></article>
+
+  <section id="research" class="section">
+    <div class="section-heading reveal"><h2>Research</h2></div>
+    <article class="card research reveal">
+      <div><p class="eyebrow">IJEDR · Vol. 14, Issue 3 · July 2026</p><h3>AI-based face recognition for automated attendance management</h3><p>Examines how a three-tier architecture can support real-time attendance using Dlib embeddings, SVM classification, and Streamlit.</p></div>
+      <a class="button" href="https://doi.org/10.56975/ijedr.v14i3.308795">Read the paper</a>
+    </article>
   </section>
-<section class="contact" id="contact">
-  <div><h2>Get in touch</h2><p>Reach me by email, phone, or LinkedIn.</p><a href="mailto:jhvk2003@gmail.com">jhvk2003@gmail.com</a><br><a href="tel:+917903119727">+91 79031 19727</a></div>
-  <div class="actions"><a class="button" href="https://www.linkedin.com/in/bishnu-kr/">LinkedIn</a><a class="button" href="https://github.com/Bishnu0001">GitHub</a></div>
-</section>
-<footer><a href="#top">Back to top</a><span>Bishnu Kumar · Ranchi, India</span></footer>
+
+  <section class="contact card reveal" id="contact">
+    <div><h2>Get in touch</h2><div class="contact-links"><a href="mailto:jhvk2003@gmail.com">jhvk2003@gmail.com</a><a href="tel:+917903119727">+91 79031 19727</a></div></div>
+    <div class="actions"><a class="button" href="https://www.linkedin.com/in/bishnu-kr/">LinkedIn</a><a class="button" href="https://github.com/Bishnu0001">GitHub</a></div>
+  </section>
+  <footer><span>Bishnu Kumar · Ranchi, India</span><a href="#top">Back to top</a></footer>
 </div>
